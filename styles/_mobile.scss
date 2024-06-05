@@ -1,0 +1,176 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        padding-top: 32px;
+        border-bottom: none;
+        &_input {
+            display: none;
+        }
+    }
+
+    .catalog_top {
+        border-bottom: none;
+    }
+
+    
+    .menu {
+        display: none;
+        &-mob {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+    }
+
+    .logo {
+        
+        &__img {
+            width: 99px;
+        }
+    }
+
+    .title {
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+    }
+
+    .title_catalog {
+        
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+
+    }
+
+    .catalog {
+        &_nav {
+            margin-top: 32px;
+        }
+    }
+
+    .select {
+        width: 288px;
+        height: 41px;
+        margin-top: 16px;
+        margin-bottom: 32px;
+
+        &_value {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    .top_text {
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .link {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_2 {
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+    }
+
+    .heading {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .for {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+
+        &__item {
+            grid-column: 1 / -1;
+            height: 375px;
+            font-size: 28px;
+            line-height: 34px;
+
+            &_big {
+                height: 244px;
+            }
+        }
+    }
+
+    .product_picture {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .product-price_sale {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .product-price_section {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .footer {
+        padding-bottom: 32px;
+        justify-content: center;
+        gap: 34px;
+
+        &_content {
+        justify-content: center;
+        grid-template: 32px;
+        }
+        
+        &_info {
+            gap: 100px;
+        }
+    }
+
+    .button-bottom {
+        width: 163px;
+        height: 37px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .cart {
+        display: flex;
+        flex-wrap: wrap;
+        &__left_img {
+        display: none;
+        }
+
+        &__name-box {
+            display: none;
+        }
+
+        &__item {
+            justify-content: flex-start;
+        }
+
+        &__link-box {
+            
+            &_a {
+                font-size: 14px;
+            }
+        }
+
+        &__info {
+            font-size: 18px;
+            line-height: 22px;
+            &_text {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+    }
+        
+}

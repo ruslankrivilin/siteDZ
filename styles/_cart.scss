@@ -1,0 +1,235 @@
+//
+
+@keyframes button {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 100%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
+
+.top_cart {
+    height: 400px;
+    background-image: url(../img/top_cart.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+
+    &__name-box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+
+    &__item {
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+            &_input {
+                width: 71px;
+                height: 51px;
+                background: #F7F6F6;
+                border-radius: 6px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 210%;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #000000;
+                border: none;
+            }
+    }
+
+    &__info {
+        width: 276px;
+        display: flex;
+        gap: 14px;
+        flex-direction: column;
+    }
+
+    &__form {
+        background: #F7F6F6;
+        border-radius: 20px;
+        width: 379px;
+        height: 556px;
+        grid-column: span 4;
+        background: rgba(222, 215, 215, 0.41);
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 20px;
+        font-size: 15px;
+        line-height: 18px;
+        color: #000000;
+            &_top {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #000000;
+                justify-content: center; 
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                padding-top: 42px;
+            }
+            &_bottom {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #000000;
+                padding-bottom: 18px;
+                justify-content: center;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+            }
+            &_button {
+                display: flex;
+                justify-content: center;
+            }
+    }
+
+    &__content {
+        grid-column: span 8;
+    }
+
+    &__left {
+        display: flex;
+        gap: 32px;
+        
+    }
+
+    &_img {
+        width: 173px;
+        height: 173px
+    }
+
+    &__link-box {
+        display: flex;
+        gap: 30px;
+
+        &_a {
+            color: #000000;
+        }
+        .cart__link-box_a:hover {
+            text-decoration: underline;
+            color: #000000;
+        }
+    }
+
+        
+
+}
+
+.button {
+    width: 290px;
+    height: 41px;
+    left: 986px;
+    top: 831px;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    animation: button 2s ease-out 1s 2 normal forwards;
+    &:hover {
+        color: #FFFFFF;
+        background-color: #000000;
+        transition: all 0.3s;
+    }
+}
+
+.form_input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid  #CACDD8;
+    height: 41px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 27px;
+    padding-right: 12px;
+    color: #000000;
+    width: 288px;
+    padding-top: 44px;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.cart__input {
+    padding-bottom: 64px;
+    
+}
+
+.button-box {
+    display: flex;
+    gap: 7px;
+}
+
+.button-bottom {
+    background: transparent;
+    width: 200px;
+    height: 37px;
+    display: block;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    border: 1px solid #000000;
+    color: #020202;
+    font-family: "Montserrat";
+    &:hover {
+        color: #FFFFFF;
+        background-color: #000000;
+        transition: all 0.3s;
+    }
+}
+
+.form {
+    padding-left: 27px;
+    padding-right: 32px;
+}
+.cart__left_img {
+    width: 173px;
+    height: 173px;
+}
+
